@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<!-- Page -->
+	<div class="container">
+		<!-- Menu -->
+		<div class="menu_btn"></div>
+		<aside>
+			<menu>
+				<li><a href="#">Личный кабинет</a></li>
+				<li class="menu_active"><a href="#">Платежи</a></li>
+				<li><a href="#">История платежей</a></li>
+				<li><a href="#">Настройки</a></li>
+				<li class="menu_other"><a href="#">Выйти</a></li>
+			</menu>
+		</aside>
+		<!-- /Menu -->
+		<!-- Payment information -->
+		<div class="info_pay">
+			<span class="info_title">Информация по оплате:</span>
+			<!--Info_account-->
+			<div class="info_account_number">
+				<span class="info_number_title">Номер счета:</span>
+				<span class="info_number">87123658716587</span>
+			</div>
+			<!--/Info_account-->
+			<!--Info_money-->
+			<div class="info_sum">
+				<span class="info_sum_title">Сумма платежа:</span>
+				<span class="info_sum">100 руб.</span>
+			</div>
+			<!--/Info_account-->
+			<!--Info_card-->
+			<form class="info_card" action="#">
+				<span class="bank_card_title">Данные банковской карты</span>
+				<!--Front_side_card-->
+				<div class="front_side_card">
+					<span class="info_card_number_title">Номер карты</span>
+					<div class="info_card_number">
+						<input type="number" placeholder="0000" pattern="[0-9]{4}" required>
+						<input type="number" placeholder="0000" pattern="[0-9]{4}" required>
+						<input type="number" placeholder="0000" pattern="[0-9]{4}" required>
+						<input type="number" placeholder="0000" pattern="[0-9]{4}" required>
+					</div>
+					<div class="info_card_data">
+						<span class="info_card_life">Срок действия</span>
+						<div class="info_container_select1">
+							<select class="info_card_month" required>
+ 					 	        <option value="month">01</option>
+ 					 	        <option value="month">02</option>
+                    <option value="month">03</option>
+                    <option value="month" selected>04</option>
+                    <option value="month">05</option>
+                    <option value="month">06</option>
+                    <option value="month">07</option>
+                    <option value="month">08</option>
+                    <option value="month">09</option>
+                    <option value="month">10</option>
+                    <option value="month">11</option>
+                    <option value="month">12</option>
+					    </select>
+						</div>
+						<div class="info_container_select2">
+							<select class="info_card_year" required>
+ 						         <option value="year">2017</option>
+                     <option value="year" selected>2018</option>
+						</select>
+						</div>
+						<input class="info_card_owner" type="text" placeholder="Держатель карты" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,20}$" required>
+
+					</div>
+				</div>
+				<!--/Front_side_card-->
+				<!--/Back_side_card-->
+				<div class="back_site_card">
+					<div class="back_site_card_line"></div>
+					<span class="back_site_card_cvv_title">Код CVV2 / CVC2</span>
+					<input class="back_site_card_cvv" type="number" placeholder="000" pattern="[0-9]{,3}" required>
+					<div class="icon_help" title="Последние 3 цифры на обороте карты"></div>
+				</div>
+				<!-- <a href="#tooltip"  -->
+				<input type="button" class="button" onclick="submitMail()" value="Оплатить">
+				<!--/Back_side_card-->
+			</form>
+			<!--/Info_card-->
+			<!--		Provision-->
+			<div class="provision">
+				<p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+				<p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+				<p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+				<p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+			</div>
+			<!--/Provision-->
+		</div>
+		<!-- /Payment information -->
+	</div>
+	<!-- /Page -->
+</body>
+<script src="main.js"></script>
+</html>

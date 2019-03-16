@@ -1,0 +1,437 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "PT Serif", serif;
+	src: url('https://fonts.googleapis.com/css?family=PT+Serif');
+}
+body {
+	background: #0B141A;
+}
+
+/* Menu */
+
+aside {
+	background: #1F2229;
+	width: 30%;
+	float: left;
+}
+
+.container {
+	max-width: 870px;
+	margin: 87px auto;
+}
+
+.menu_btn {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	background-size: contain;
+	cursor: pointer;
+	position: fixed;
+	display: none;
+}
+
+menu {
+	list-style: none;
+}
+
+menu li {
+	padding: 26px 0 26px 0;
+	cursor: pointer;
+	border-top: 1px solid #20232B;
+}
+
+menu a {
+	margin-left: 30px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "PT Serif", serif;
+}
+
+menu a:hover {
+	color: #7C8488;
+}
+
+.menu_active {
+	background: #2A2D37;
+}
+
+.menu_other {
+	background: #191C24;
+}
+
+/* End Menu */
+
+/* Payment information */
+
+.info_pay {
+	background: #fff;
+	padding-top: 50px;
+	margin-left: 30%;
+	padding-left: 30px;
+	height: 570px;
+}
+
+.info_number_title,
+.info_sum_title {
+	color: #8494AB;
+	width: 133px;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.info_title {
+	font-size: 16px;
+	margin-bottom: 27px;
+	display: inline-block;
+	color: #8494AB;
+}
+
+.info_number,
+.info_sum {
+	color: #1f2229;
+	font-size: 16px;
+}
+
+.info_card {
+	margin-top: 35px;
+	height: 395px;
+}
+
+.bank_card_title {
+	font-size: 22px;
+	font-family: "PT Serif", serif;
+	color: #1f2229;
+	margin-bottom: 25px;
+	display: inline-block;
+}
+
+.front_side_card {
+	z-index: 2;
+	width: 350px;
+}
+
+.info_card_owner,
+.front_side_card,
+.back_site_card,
+.info_card_number input,
+.info_card_month,
+.info_card_year,
+.back_site_card_cvv {
+	border: 1px solid #E4E9EE;
+}
+
+.front_side_card,
+.back_site_card {
+	background: #F7F8F8;
+	border-radius: 10px;
+	position: relative;
+}
+
+.info_card_number_title,
+.info_card_life {
+	color: #8494ab;
+	font-family: serif;
+	font-size: 16px;
+	margin: 16px 0 10px 15px;
+	display: inline-block;
+	width: 100%;
+}
+
+.info_card_number {
+	text-align: center;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.info_card_number input {
+	display: inline-block;
+	width: 65px;
+	height: 40px;
+	/* margin-right: 10px; */
+}
+
+.info_card_month {
+	width: 70px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+.info_card_year {
+	width: 85px;
+}
+
+.info_card_month,
+.info_card_year {
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-family: serif;
+}
+
+.info_card_owner {
+	margin: 12px 0 15px 15px;
+	width: 300px;
+	height: 40px;
+}
+
+.info_card_data {
+	position: relative;
+	display: inline-block;
+}
+
+.info_container_select1 {
+	float: left;
+}
+
+.info_container_select1::after,
+.info_container_select2::after {
+	content: "";
+	background-size: contain;
+	position: absolute;
+	z-index: 1;
+	width: 30px;
+	height: 23px;
+	pointer-events: none;
+	box-sizing: border-box;
+	top: 54px;
+}
+
+.info_container_select1::after {
+	right: 140px;
+}
+
+.info_container_select2::after {
+	right: 235px;
+}
+
+select {
+	padding-right: 25px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.info_card_owner::placeholder {
+	padding-left: 15px;
+}
+
+.back_site_card {
+	bottom: 225px;
+	left: 135px;
+	height: 240px;
+	width: 370px;
+}
+
+.back_site_card_line {
+	width: 100%;
+	height: 45px;
+	background: #E8ECF1;
+	margin-top: 20px;
+}
+
+.back_site_card_cvv_title {
+	text-align: right;
+	width: 100%;
+	font-size: 16px;
+	font-family: serif;
+	color: #8494ab;
+	margin-left: -10px;
+	margin-top: 20px;
+	float: left;
+}
+
+.back_site_card_cvv {
+	text-align: center;
+	height: 40px;
+	width: 130px;
+	margin-top: 5px;
+	margin-left: 230px;
+}
+
+.icon_help::after {
+	content: "";
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%3Crect%20width%3D%2215%22%20height%3D%2215%22%20x%3D%22.5%22%20y%3D%22.5%22%20stroke%3D%22%23B4BFCC%22%20rx%3D%227.5%22%2F%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%23828A99%22%20d%3D%22M5.67342187%2C6.34423828%20L6.78523828%2C6.34423828%20C6.83357812%2C5.65673828%207.31160547%2C5.22167969%208.05281641%2C5.22167969%20C8.78865625%2C5.22167969%209.26668359%2C5.65136719%209.26668359%2C6.2421875%20C9.26668359%2C6.78466797%209.03572656%2C7.09082031%208.38582422%2C7.48291016%20C7.64998437%2C7.92333984%207.32234766%2C8.40673828%207.34920312%2C9.18017578%20L7.35457422%2C9.58837891%20L8.46639062%2C9.58837891%20L8.46639062%2C9.26611328%20C8.46639062%2C8.72363281%208.66512109%2C8.43896484%209.35799219%2C8.03076172%20C10.0669766%2C7.60644531%2010.4859219%2C7.02099609%2010.4859219%2C6.19384766%20C10.4859219%2C5.02832031%209.52986719%2C4.18505859%208.11189844%2C4.18505859%20C6.55428125%2C4.18505859%205.72176172%2C5.10888672%205.67342187%2C6.34423828%20Z%20M7.97762109%2C12.1235352%20C8.47176172%2C12.1235352%208.80476953%2C11.7958984%208.80476953%2C11.3071289%20C8.80476953%2C10.8076172%208.47176172%2C10.4799805%207.97762109%2C10.4799805%20C7.48348047%2C10.4799805%207.14510156%2C10.8076172%207.14510156%2C11.3071289%20C7.14510156%2C11.7958984%207.48348047%2C12.1235352%207.97762109%2C12.1235352%20Z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E") 50% no-repeat;
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	display: block;
+	float: right;
+	position: relative;
+	bottom: 35px;
+	right: 15px;
+}
+
+.button {
+	width: 170px;
+	border: none;
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	border-radius: 20px;
+	position: absolute;
+	top: 570px;
+	cursor: pointer;
+	font-family: "PT Serif", serif;
+	background-color: #0C10AD;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2c500', endColorstr='#83b200', GradientType=0);
+}
+
+/* Payment information */
+
+.provision {
+	margin-left: -1.9rem;
+	background: #373C43;
+	color: #7f8591;
+	font-size: 12px;
+	font-family: serif;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+
+.provision p {
+	margin: 5px 30px 20px 30px;
+	line-height: 1.2rem;
+}
+
+.error {
+	border-color: red !important;
+}
+
+/* Select option reset */
+
+select::-ms-expand {
+	display: none;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* /select option reset */
+
+@media only screen and (max-width:768px) {
+	/* Menu */
+	aside {
+		width: 197px;
+	}
+	.aside_logo {
+		margin: 67px 63px 59px 15px;
+	}
+	.header_container {
+		text-align: center;
+		padding-top: 20px;
+		margin-left: auto;
+	}
+	menu a {
+		font-size: 14px;
+	}
+	/* /Menu	*/
+	.container {
+		margin: 0 auto;
+	}
+	/* Payment information	*/
+	.info_pay {
+		margin-left: 197px;
+		height: auto;
+	}
+	.info_card {
+		height: auto;
+		margin-bottom: 10px;
+	}
+	.front_side_card,
+	.back_site_card {
+		position: inherit;
+	}
+	.back_site_card {
+		margin-top: 10px;
+		height: 200px;
+		width: 350px;
+	}
+	.back_site_card_cvv {
+		margin-top: 5px;
+		margin-left: 210px;
+	}
+	.button {
+		position: relative;
+		padding: 2% 5%;
+		margin-top: 5px;
+		display: block;
+	}
+	.provision p {
+		margin-bottom: 0;
+	}
+	/* /Payment information	*/
+}
+
+/* End 768px*/
+
+@media only screen and (max-width:582px) {
+	/* Menu */
+	aside {
+		display: none;
+		position: fixed;
+		z-index: 99;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding-top: 20%;
+		padding-bottom: 203px;
+	}
+	.menu_btn {
+		display: block;
+		z-index: 100;
+	}
+	/* Menu */
+	/* Payment information	*/
+	.info_pay {
+		padding-top: 25px;
+		margin-left: 0;
+	}
+	.back_site_card {
+		margin-top: 10px;
+	}
+	.front_side_card,
+	.back_site_card {
+		width: 80%;
+	}
+	.back_site_card_cvv {
+		margin-top: 5px;
+		width: 36%;
+		margin-left: 61%;
+	}
+	.info_container_select1::after {
+		left: 55px;
+	}
+	.info_container_select2::after {
+		right: 40px;
+	}
+	 .info_card_number input {
+		width: 20%;
+		height: 30px;
+		margin-right: 1.25%;
+ }
+	.info_card_owner {
+		width: 80%;
+	}
+	/* /Payment information	*/
+	.button {
+		position: relative;
+		padding: 2% 5%;
+		margin-top: 5px;
+		display: block;
+	}
+
+
+/* End 582px*/
